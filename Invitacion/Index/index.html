@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#07152f" />
+  <meta name="description" content="A different kind of weekend — invitación exclusiva para Apóstoles de Honor." />
+  <title>A different kind of weekend | Apóstol de Honor</title>
+
+  <!-- Tipografías -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Biblioteca de iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  <!-- Biblioteca de animaciones -->
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+
+  <link rel="stylesheet" href="../estilos/style.css" />
+</head>
+
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id="crestRing" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#ffffff"/>
+        <stop offset="35%" stop-color="#9fe7ff"/>
+        <stop offset="65%" stop-color="#26f4dd"/>
+        <stop offset="100%" stop-color="#0d5c56"/>
+      </linearGradient>
+      <linearGradient id="crestGold" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#ffe8a0"/>
+        <stop offset="100%" stop-color="#d9a53c"/>
+      </linearGradient>
+      <linearGradient id="crestWW" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#ffffff"/>
+        <stop offset="50%" stop-color="#cdeaff"/>
+        <stop offset="100%" stop-color="#26f4dd"/>
+      </linearGradient>
+      <filter id="crestShadow" x="-50%" y="-50%" width="200%" height="200%">
+        <feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#000814" flood-opacity="0.5"/>
+      </filter>
+    </defs>
+    <symbol id="ww-crest" viewBox="0 0 200 200">
+      <circle cx="100" cy="100" r="93" fill="none" stroke="url(#crestRing)" stroke-width="4"/>
+      <circle cx="100" cy="100" r="84" fill="none" stroke="rgba(255,255,255,.22)" stroke-width="1"/>
+      <polygon points="62,90 70,55 84,69 100,47 116,69 130,55 138,90" fill="url(#crestGold)" filter="url(#crestShadow)"/>
+      <circle cx="70" cy="55" r="5.5" fill="#fff3cf"/>
+      <circle cx="100" cy="47" r="6.5" fill="#fff8e2"/>
+      <circle cx="130" cy="55" r="5.5" fill="#fff3cf"/>
+      <text x="100" y="147" text-anchor="middle" font-family="'Playfair Display', serif" font-weight="800" font-size="76" fill="url(#crestWW)" filter="url(#crestShadow)">WW</text>
+      <path d="M50,163 Q100,177 150,163" fill="none" stroke="url(#crestGold)" stroke-width="3" opacity=".65" stroke-linecap="round"/>
+      <circle cx="50" cy="163" r="2.2" fill="#ffe8a0"/>
+      <circle cx="150" cy="163" r="2.2" fill="#ffe8a0"/>
+    </symbol>
+  </svg>
+  <div class="noise"></div>
+  <div class="aurora aurora-a"></div>
+  <div class="aurora aurora-b"></div>
+
+  <!-- Decoración tropical flotante -->
+  <div class="leaf leaf-1">🌴</div>
+  <div class="leaf leaf-2">🌿</div>
+  <div class="leaf leaf-3">🌺</div>
+  <div class="leaf leaf-4">🍃</div>
+
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="A different kind of weekend">
+      <span class="brand-mark">
+        <svg class="brand-mark-svg" viewBox="0 0 200 200" role="img" aria-label="Escudo A different kind of weekend"><use href="#ww-crest"></use></svg>
+      </span>
+      <span>
+        <strong>A different kind</strong>
+        <small>of weekend</small>
+      </span>
+    </a>
+    <a class="mini-link" href="#confirmar">Confirmar <i class="fa-solid fa-arrow-right"></i></a>
+  </header>
+
+  <main id="inicio">
+    <!-- HERO -->
+    <section class="hero section">
+      <div class="hero-glow"></div>
+
+      <div class="hero-copy reveal">
+        <div class="eyebrow">
+          <span class="dot"></span>
+          INVITACIÓN PRIVADA
+          <span class="dot"></span>
+        </div>
+
+        <p class="honor">HAS SIDO ELEGIDO COMO</p>
+        <h1>Apóstol<br><em>de Honor</em></h1>
+
+        <p class="hero-text">
+          Prepárate para escapar de la rutina, cambiar de escenario
+          y vivir un fin de semana diseñado para disfrutar, compartir
+          y crear recuerdos.
+        </p>
+
+        <a class="cta cta-primary magnetic" href="#confirmar">
+          <span>Quiero vivirlo</span>
+          <i class="fa-solid fa-arrow-down"></i>
+        </a>
+      </div>
+
+      <div class="hero-orbit">
+        <div class="orbit-ring ring-1"></div>
+        <div class="orbit-ring ring-2"></div>
+        <div class="orbit-center">
+          <svg class="crest-svg" viewBox="0 0 200 200" role="img" aria-label="Escudo A different kind of weekend"><use href="#ww-crest"></use></svg>
+          <small>A DIFFERENT KIND</small>
+          <span>OF WEEKEND</span>
+        </div>
+      </div>
+
+      <div class="scroll-hint">
+        <span>Desliza para descubrir</span>
+        <i class="fa-solid fa-chevron-down"></i>
+      </div>
+    </section>
+
+    <!-- EXPERIENCIA -->
+    <section class="experience section">
+      <div class="section-heading reveal">
+        <span class="kicker">LA EXPERIENCIA</span>
+        <h2>Un fin de semana<br><em>fuera de lo común.</em></h2>
+        <p>No es solamente salir de viaje. Es darle pausa a la rutina y decirle sí a una experiencia diferente.</p>
+      </div>
+
+      <div class="experience-grid">
+        <article class="glass-card tilt reveal">
+          <div class="icon-wrap"><i class="fa-solid fa-van-shuttle"></i></div>
+          <h3>Transporte</h3>
+          <p>Ida y regreso organizados para que solo te preocupes por disfrutar.</p>
+        </article>
+
+        <article class="glass-card tilt reveal">
+          <div class="icon-wrap"><i class="fa-solid fa-house"></i></div>
+          <h3>Hospedaje</h3>
+          <p>Una finca privada en la zona occidental de Antioquia.</p>
+        </article>
+
+        <article class="glass-card tilt reveal">
+          <div class="icon-wrap"><i class="fa-solid fa-utensils"></i></div>
+          <h3>Alimentación</h3>
+          <p>Comida incluida para acompañar cada momento del fin de semana.</p>
+        </article>
+
+        <article class="glass-card tilt reveal">
+          <div class="icon-wrap"><i class="fa-solid fa-champagne-glasses"></i></div>
+          <h3>Cóctel & sorpresas</h3>
+          <p>Bienvenida, actividades y momentos que no estarán en el guion.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- FECHA -->
+    <section class="date-section section">
+      <div class="date-panel reveal">
+        <div class="date-copy">
+          <span class="kicker">MARCA LA FECHA</span>
+          <h2>27 <span>—</span> 30</h2>
+          <p class="month">NOVIEMBRE</p>
+          <p class="location"><i class="fa-solid fa-location-dot"></i> Zona Occidente · Antioquia</p>
+          <p class="sub-location">Sopetrán · San Jerónimo · Santa Fe de Antioquia</p>
+        </div>
+
+        <div class="time-card">
+          <i class="fa-regular fa-clock"></i>
+          <span>Salida</span>
+          <strong>6:00 PM — 8:00 PM</strong>
+          <small>Hora estimada de salida</small>
+        </div>
+      </div>
+    </section>
+
+    <!-- CUPO -->
+    <section class="limited section">
+      <div class="limited-card reveal">
+        <div class="sparkle">✦</div>
+        <span class="kicker">EDICIÓN LIMITADA</span>
+        <h2>Solo <strong>12</strong> cupos<br>de hospedaje.</h2>
+        <p>
+          Confirma tu asistencia cuanto antes. El orden de confirmación
+          determinará los 12 cupos principales de hospedaje.
+        </p>
+
+        <div class="counter">
+          <div><strong id="days">--</strong><span>DÍAS</span></div>
+          <div><strong id="hours">--</strong><span>HORAS</span></div>
+          <div><strong id="minutes">--</strong><span>MIN</span></div>
+          <div><strong id="seconds">--</strong><span>SEG</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONFIRMAR -->
+    <section id="confirmar" class="confirm section">
+      <div class="confirm-inner reveal">
+        <span class="kicker">TU SIGUIENTE PASO</span>
+        <h2>¿Vienes a vivir<br><em>A different kind of weekend?</em></h2>
+        <p>
+          Completa el formulario de confirmación. Nuestro equipo revisará
+          el orden de las respuestas y se pondrá en contacto contigo por WhatsApp.
+        </p>
+
+        <!-- REEMPLAZA EL href POR EL LINK REAL DE TU GOOGLE FORM -->
+        <a id="formLink" class="cta cta-gold magnetic"
+           href="https://forms.gle/XYnqJb2T8m15dXdR8"
+           target="_blank" rel="noopener noreferrer">
+          <span>Confirmar mi asistencia</span>
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+
+        <p class="privacy-note">
+          <i class="fa-solid fa-lock"></i>
+          Tu información será utilizada para la organización del evento.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-logo">
+      <svg class="footer-logo-svg" viewBox="0 0 200 200" role="img" aria-label="Escudo A different kind of weekend"><use href="#ww-crest"></use></svg>
+    </div>
+    <div>
+      <strong>Willy’s Weekend’s Events Productions</strong>
+      <p>A different kind of weekend · Apóstoles de Honor</p>
+    </div>
+    <span class="footer-spark">✦</span>
+  </footer>
+
+  <script src="../scrip/app.js"></script>
+</body>
+</html>
